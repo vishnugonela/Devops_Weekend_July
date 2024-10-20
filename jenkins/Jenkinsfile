@@ -5,7 +5,9 @@ pipeline{
         stage('build'){
             steps{
                 sh '''
+                    bash ${WORKSPACE}/linux/script.sh
                     echo "Build is succcessful on build stage"
+                    
                 '''
             }
         }
