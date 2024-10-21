@@ -1,0 +1,27 @@
+pipeline{
+    agent any
+    
+    stages{
+        stage('build'){
+            steps{
+                sh '''
+                echo "Build is ready"
+                '''
+            }
+        }
+        stage('test'){
+            steps{
+                sh '''
+                echo "Test is ready"
+                '''
+            }
+        }
+        stage('deploy'){
+            steps{
+                sh '''
+                echo "deploy is ready"
+                '''
+            }
+        }
+    }
+}
